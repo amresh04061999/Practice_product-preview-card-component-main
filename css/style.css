@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background-color: hsl(24deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-contain-center {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card-image {
+  overflow: hidden;
+  height: 450px;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 520px;
+  border-radius: 20px 0 0 20px;
+}
+
+.right-section {
+  width: 310px;
+  padding: 30px 30px 20px 30px;
+}
+
+.right-section > span {
+  color: hsl(231deg, 6%, 56%);
+  font-size: 13px;
+}
+
+.right-section > h1 {
+  color: hsl(228deg, 6%, 17%);
+  padding-top: 20px;
+  font-family: "Fraunces", serif;
+}
+
+.right-section > p {
+  color: hsl(231deg, 6%, 56%);
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.number-section {
+  padding: 20px 0;
+}
+
+.number-section > span {
+  font-size: 30px;
+  color: hsl(158deg, 33%, 38%);
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+
+.number-section > p {
+  font-size: 14px;
+  padding-left: 20px;
+  color: hsl(231deg, 6%, 56%);
+  text-decoration: line-through;
+}
+
+.right-section > button {
+  background-color: hsl(158deg, 34%, 38%);
+  color: white;
+  font-weight: 700;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.shopping-icon {
+  padding-right: 10px;
+  width: 24px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-image {
+    background-image: url("../../../images/image-product-mobile.jpg");
+    height: 320px;
+    border-radius: 20px 20px 0 0px;
+  }
+  .card-image > img {
+    height: 400px;
+    width: 100%;
+  }
+  .right-section {
+    width: 360px;
+    padding: 30px 30px 20px 30px;
+  }
+  .right-section > button {
+    padding: 15px 95px;
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
