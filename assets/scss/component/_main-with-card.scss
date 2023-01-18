@@ -11,15 +11,15 @@ main {
     overflow: hidden;
     height: 450px;
 }
-.card-image>img {
+.card-image img {
+    height: 100%;
     width: $width;
-    height: 520px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .right-section {
     width: 310px;
-    padding: 30px 30px 20px 30px;
+    padding: 30px 40px 20px 30px;
 }
 
 .right-section>span {
@@ -62,7 +62,7 @@ main {
     background-color:  $primary;
     color:$white;
     font-weight: 700;
-    padding: 15px 70px;
+    padding: 15px 60px;
     border: none;
     border-radius: 8px;
     margin-top: 20px;
