@@ -57,6 +57,7 @@ main {
 .right-section > span {
   color: hsl(231deg, 6%, 56%);
   font-size: 13px;
+  letter-spacing: 4px;
 }
 
 .right-section > h1 {
@@ -90,7 +91,7 @@ main {
 }
 
 .right-section > button {
-  background-color: hsl(158deg, 34%, 38%);
+  background-color: hsl(158deg, 33%, 38%);
   color: white;
   font-weight: 700;
   padding: 15px 70px;
