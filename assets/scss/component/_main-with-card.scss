@@ -1,9 +1,10 @@
 main {
-    width:$width;
-    height:$height;
+    width: $width;
+    height: $height;
 }
+
 .card {
-    background-color:$white;
+    background-color: $white;
     border-radius: 20px;
 }
 
@@ -11,9 +12,13 @@ main {
     overflow: hidden;
     height: 450px;
 }
+
 .card-image img {
-    height: 100%;
+    height: $height;
     width: $width;
+}
+
+.desktop-img>img {
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -22,10 +27,30 @@ main {
     padding: 30px 40px 20px 30px;
 }
 
+.desktop-img {
+    display: block;
+    height: 100%;
+
+    @media (max-width:575px) {
+        display: none;
+    }
+}
+
+.mobile-img {
+    display: none;
+    height: 100%;
+
+    @media (max-width:575px) {
+        display: block;
+
+
+    }
+}
+
 .right-section>span {
     color: $secondry;
     font-size: 13px;
-    letter-spacing:4px
+    letter-spacing: 4px
 }
 
 .right-section>h1 {
@@ -35,7 +60,7 @@ main {
 }
 
 .right-section>p {
-    color:$secondry;
+    color: $secondry;
     padding-top: 20px;
     font-size: 14px;
 }
@@ -48,50 +73,56 @@ main {
     font-size: 30px;
     color: $primary;
     font-weight: 700;
-    font-family:$font-family;
+    font-family: $font-family;
 }
 
 .number-section>p {
     font-size: 14px;
     padding-left: 20px;
-    color:$secondry;
+    color: $secondry;
     text-decoration: line-through;
 }
 
 .right-section>button {
-    background-color:  $primary;
-    color:$white;
+    background-color: $primary;
+    color: $white;
     font-weight: 700;
-    padding: 15px 60px;
+    padding: 12px 60px;
     border: none;
     border-radius: 8px;
     margin-top: 20px;
 }
-.shopping-icon{
+
+.shopping-icon {
     padding-right: 10px;
-     width: 24px;
+    width: 24px;
 }
-@media (max-width:600px) {
+
+@media (max-width:575px) {
     .card {
         flex-direction: column;
     }
+
     .card-image {
-        background-image: url("../../../images/image-product-mobile.jpg");
-        height: 320px;
-        border-radius: 20px 20px 0 0px;
-    }
-    .card-image>img {
-        height: 400px;
-        width: $width;
-    }
-    .right-section {
-        width: 360px;
-        padding: 30px 30px 20px 30px;
-    }
-    .right-section>button {
-        padding: 15px 95px;
-        margin-top: 0px;
-  
+        overflow: hidden;
+        height: 200px;
     }
 
+    .right-section {
+        padding: 17px 10px 18px 15px;
+    }
+
+    .right-section>h1 {
+        font-size: 32px;
+    }
+
+    .right-section>button {
+        padding: 14px 85px;
+        margin-top: 0px;
+    }
+
+    .mobile-img>img {
+        border-radius: 10px 10px 0px 0px;
+
+    }
 }
